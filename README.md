@@ -94,6 +94,6 @@ CRUD uygulamaları çoğu web uygulamasının temelidir. Harici bir kaynaktan ve
 
 ### Esnek görevler
 - Eklenen DeleteMovieModal öğesinin bir silme işlemi gerçekleşmeden önce görünmesini ve çalıştırılmasını sağlayın.
-- "addToFavorites" işlevini ekleyin. `Film` bileşeninde favori butonuna basıldığında, o anda görüntülenenin idsinin ve adının `App.js`deki favori state diliminde olduğundan emin olun.
+-  "addToFavorites" işlevini ekleyin. `Film` bileşeninde favori butonuna basıldığında, o anda görüntülenenin idsinin ve adının `App.js`deki favori state diliminde olduğundan emin olun.
 - Ekstra kredi için, yalnızca benzersiz filmlerin favori olarak eklenebildiğinden emin olun. Diziler için ".find" metodunu nasıl kullandığımızı hatırlayın.
 - Stiller ekleyin.
