@@ -56,41 +56,41 @@ CRUD uygulamaları çoğu web uygulamasının temelidir. Harici bir kaynaktan ve
 
 * [x] Ardından, url aracılığıyla bileşene iletilen idyi almamız gerekiyor.. id yi almak için `useParams` hookunu kullanın.
 
-* [ ] Mevcut filmin niteliklerini yerel form stateimize yükleyebilmeliyiz. `EditMovieForm` bağlandığında, mevcut idmizin filmini api'den alın ve yerel state'e döndürülen verileri kaydedin.
+* [x] Mevcut filmin niteliklerini yerel form stateimize yükleyebilmeliyiz. `EditMovieForm` bağlandığında, mevcut idmizin filmini api'den alın ve yerel state'e döndürülen verileri kaydedin.
 
-* [ ] Bu noktada, düzenleme formu gönderildiğinde hiçbir şey olmuyor. Sunucuyu güncellenmiş film verilerimizle güncellemek için gereken api çağrısını ekleyin.
+* [x] Bu noktada, düzenleme formu gönderildiğinde hiçbir şey olmuyor. Sunucuyu güncellenmiş film verilerimizle güncellemek için gereken api çağrısını ekleyin.
 
-* [ ] Sunucu verilerinizin ve yerel state'inizin senkronize olduğundan emin olmayı unutmayın! Düzenleme formuna, uygulamanın "setMovies" metoduna erişim izni vermek için düzenleme yapmak için gereken değişiklikleri yapın.
+* [x] Sunucu verilerinizin ve yerel state'inizin senkronize olduğundan emin olmayı unutmayın! Düzenleme formuna, uygulamanın "setMovies" metoduna erişim izni vermek için düzenleme yapmak için gereken değişiklikleri yapın.
 
-* [ ] Artık `setMovies`e erişimimiz olduğuna göre, güncellenmiş film listesinin global state'imize kaydedildiğinden emin olun.
+* [x] Artık `setMovies`e erişimimiz olduğuna göre, güncellenmiş film listesinin global state'imize kaydedildiğinden emin olun.
 
-* [ ] Kullanıcıyı halihazırda düzenlenen filmin bağımsız bilgi sayfasına yönlendirin.
+* [x] Kullanıcıyı halihazırda düzenlenen filmin bağımsız bilgi sayfasına yönlendirin.
 
 #### Film silme
 > *Bir CRUD özelliği eklediniz! Aferin! Şimdi kareleri silelim...*
 
-* [ ] Silmek için gereken "butonu" tutan bileşeni tanımlayın. Bu butona bir event handler ekleyin.
+* [x] Silmek için gereken "butonu" tutan bileşeni tanımlayın. Bu butona bir event handler ekleyin.
 
-* [ ] Görüntülenmekte olan filmi silmek için istekte bulunan bir event handler oluşturun. Bu requestten ne döndürüldüğünü gözlemleyin.
+* [x] Görüntülenmekte olan filmi silmek için istekte bulunan bir event handler oluşturun. Bu requestten ne döndürüldüğünü gözlemleyin.
 
-* [ ] Bir kez daha sunucuyu ve state verilerini senkronize tutmanız gerekecek. `App.js` içinde, `deleteMovie` metodunu bir id alıp, girilen id li filmi verimizden silip state'i güncelleyecek şekilde tamamlayın.
+* [x] Bir kez daha sunucuyu ve state verilerini senkronize tutmanız gerekecek. `App.js` içinde, `deleteMovie` metodunu bir id alıp, girilen id li filmi verimizden silip state'i güncelleyecek şekilde tamamlayın.
 
-* [ ] `deleteMovie` 'yi ilgili bileşene aktarın.
+* [x] `deleteMovie` 'yi ilgili bileşene aktarın.
 
-* [ ] Film silme isteği yapıldığında `deleteMovie` yi çalıştırın, istek tamamlandığında kullanıcıyı `/movies` routeuna yönlendirin.
+* [x] Film silme isteği yapıldığında `deleteMovie` yi çalıştırın, istek tamamlandığında kullanıcıyı `/movies` routeuna yönlendirin.
 
 #### Yeni bir film ekleme
 > *Tamam! Artık hazırsın! Şimdi baştan sona bir CRUD oluşturalım.*
 
-* [ ] Sıfırdan bir "AddMovieForm" bileşeni oluşturmak için "EditMovieForm.js"yi model olarak kullanın. Bileşen, yeni bir filmin tüm özelliklerini yerel state'de tutmalıdır.
+* [x] Sıfırdan bir "AddMovieForm" bileşeni oluşturmak için "EditMovieForm.js"yi model olarak kullanın. Bileşen, yeni bir filmin tüm özelliklerini yerel state'de tutmalıdır. ADDMOVIE COMP OLUSTURULMADI.
 
-* [ ] AddMovieForm'a erişim sağlayan bir route ekleyin.
+* [x] AddMovieForm'a erişim sağlayan bir route ekleyin.
 
-* [ ] Kullanıcı arayüzünün yeni "AddMovieForm"unuza yönlendirilmesi gereken bölümünü bulun. Bu düğmenin beklendiği gibi çalışmasını sağlayın.
+* [x] Kullanıcı arayüzünün yeni "AddMovieForm"unuza yönlendirilmesi gereken bölümünü bulun. Bu düğmenin beklendiği gibi çalışmasını sağlayın.
 
-* [ ] AddMovieForm'da, form gönderimi için bir event handler ekleyin. Form gönderildiğinde, bileşenin state değerleri ile bir film eklemek için uygun çağırıyı çalıştırın.
+* [x] AddMovieForm'da, form gönderimi için bir event handler ekleyin. Form gönderildiğinde, bileşenin state değerleri ile bir film eklemek için uygun çağırıyı çalıştırın.
 
-* [ ] Bileşeninizin, oluşturulduktan sonra genel state'inin `/movies` dizinine yönlendirmeler için gerekli erişime sahip olduğundan ve bunları çalıştırdığından ve değiştirdiğinden emin olun.
+* [x] Bileşeninizin, oluşturulduktan sonra genel state'inin `/movies` dizinine yönlendirmeler için gerekli erişime sahip olduğundan ve bunları çalıştırdığından ve değiştirdiğinden emin olun.
 
 ### Esnek görevler
 - Eklenen DeleteMovieModal öğesinin bir silme işlemi gerçekleşmeden önce görünmesini ve çalıştırılmasını sağlayın.

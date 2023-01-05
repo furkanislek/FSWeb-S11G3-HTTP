@@ -34,8 +34,10 @@ const App = (props) => {
   };
 
   const addToFavorites = (movie) => {
-    console.log(movie);
-   setFavoriteMovies([...favoriteMovies, movie]);
+    const favoriList = favoriteMovies.find(
+      (movieItem) => movieItem.id === movie.id
+    );
+    !favoriList && setFavoriteMovies([...favoriteMovies, movie]);
   };
 
   return (
@@ -64,7 +66,7 @@ const App = (props) => {
               />
             </Route>
 
-            <Route path="/movies">
+            <Route path="/movies" exact>
               <MovieList movies={movies} />
             </Route>
 
