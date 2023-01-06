@@ -30,6 +30,8 @@ const App = (props) => {
     axios.delete("http://localhost:9000/api/movies/" + id).then((res) => {
       console.log("Başarı ile silindi.");
       setMovies(res.data);
+      const deleteFavori = favoriteMovies.filter((fav) => fav.id !== id);
+      setFavoriteMovies(deleteFavori)
     });
   };
 
